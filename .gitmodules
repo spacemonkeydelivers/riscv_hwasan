@@ -2,3 +2,7 @@
 	path = src/llvm-project
 	url = https://github.com/gattaca-lab/llvm-project
 	branch = riscv_hwasan
+[submodule "src/qemu"]
+	path = src/qemu
+	url = https://github.com/gattaca-lab/qemu
+	branch = riscv_tbi
