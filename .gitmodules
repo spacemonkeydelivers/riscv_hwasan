@@ -6,3 +6,7 @@
 	path = src/qemu
 	url = https://github.com/gattaca-lab/qemu
 	branch = riscv_tbi
+[submodule "src/linux"]
+	path = src/linux
+	url = https://github.com/gattaca-lab/linux
+	branch = riscv_tbi
