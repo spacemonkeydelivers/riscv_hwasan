@@ -13,3 +13,6 @@
 [submodule "src/buildroot"]
 	path = src/buildroot
 	url = git://git.busybox.net/buildroot
+[submodule "src/riscv-pk"]
+	path = src/riscv-pk
+	url = https://github.com/riscv/riscv-pk
