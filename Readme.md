@@ -7,17 +7,12 @@ submodules.
 The main purpose is to provide instructions regarding the general development
 process and to provide releases.
 
-
-## TODO (before release)
-
-1. Provide procedure to build GNU toolchain from vanilla sources.
-1. Get rid of riscv-pk. It is excessive (and looks bogus).
-
 ## How to obtain sources
-
-* git clone https://github.com/gattaca-lab/riscv_hwasan
-* cd riscv_hwasan
-* ./setup_git
+````
+ git clone https://github.com/gattaca-lab/riscv_hwasan
+ cd riscv_hwasan
+ ./setup_git
+````
 
 ## How to build everything
 
@@ -32,7 +27,7 @@ To build project:
 Example of compilation string:
 
 ```
-  ./install/bin/clang \<c source\> \
+  ./install/bin/clang <c source> \
     -L ./install/lib/gcc/riscv64-unknown-linux-gnu/9.2.0/ \
     -B ./install/lib/gcc/riscv64-unknown-linux-gnu/9.2.0/
 ```
@@ -46,7 +41,6 @@ Example of compilation string:
 ./run_qemu.sh
 login: root
 password: root
-# For neptune users: /tank/work/dev/share/nfs would already be mounted to /mnt upon boot
 ```
 
 ## How to modify rootfs image
