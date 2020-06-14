@@ -44,21 +44,10 @@ Example of compilation string:
 * command:
 ```
 ./run_qemu.sh
+login: root
+password: root
 # For neptune users: /tank/work/dev/share/nfs would already be mounted to /mnt upon boot
 ```
-
-## How to use existing infra with QEMU vm
-
-* Prebuilt gdb and binutils in this case are located in /mnt/ablue/{riscv_gdb,riscv_binutils}
-* Access VM via ssh:
-  - set password for root with passwd
-  - get ip address of the VM via ifconfig
-  - run "ssh root@\<ip addr from 2 step\>"
-* To make GDB find sources on the VM, you have to:
-  - Copy sources to the NFS share directory
-  - Inside GDB run "set substitute-path from to" where **from** is path on
-  **host** and **to** is path on **VM** via mounted nfs share
-  
 
 ## How to modify rootfs image
 * In **src/config/riscv** there are different directories that are copied into the built rootfs image
