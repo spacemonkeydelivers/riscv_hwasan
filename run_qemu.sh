@@ -15,5 +15,5 @@ sudo ${QEMU_BIN} \
     -drive file=${BUILDROOT_BUILD_DIR}/output/images/rootfs.ext2,format=raw,id=hd0 \
     -device virtio-blk-device,drive=hd0 \
     -m 1024M \
-    -device virtio-net-device,netdev=net0,mac=${MAC} \
-    -netdev tap,id=net0,script=./scripts/add_to_bridge.sh,downscript=./scripts/del_from_bridge.sh
+#    -device virtio-net-device,netdev=net0,mac=${MAC} \
+#    -netdev tap,id=net0,script=./scripts/add_to_bridge.sh,downscript=./scripts/del_from_bridge.sh
