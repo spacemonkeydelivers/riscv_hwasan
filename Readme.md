@@ -8,11 +8,13 @@ The main purpose is to provide instructions regarding the general development
 process and to provide releases.
 
 ## How to obtain sources
-````
+
+```
  git clone https://github.com/gattaca-lab/riscv_hwasan
  cd riscv_hwasan
+ # WILL TAKE A WHILE
  ./setup_git
-````
+```
 
 ## How to build everything
 
