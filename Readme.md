@@ -16,6 +16,14 @@ process and to provide releases.
  ./setup_git
 ```
 
+## Prerequisites
+At least these several packages are required to build the GCC toolchain. On Ubuntu you could install them using following line:
+
+```
+sudo apt-get install autoconf automake autotools-dev curl python3 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
+```
+**NB**: this list might not be complete. If you encounter any issue while building the project, raise an issue and we'll update the list.
+
 ## How to build everything
 
 To build project:
