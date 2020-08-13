@@ -23,5 +23,5 @@ cd ${ROOT_DIR}
 
 # switch LLVM to proper branch
 cd ${BUILDROOT_SRC_DIR}
-git checkout 2020.02.x
+git checkout 2020.05.x
 cd ${ROOT_DIR}
