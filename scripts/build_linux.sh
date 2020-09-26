@@ -8,7 +8,7 @@ function build_linux ()
     PATH="$PATH:${INSTALL_DIR}/bin/"
     cp "${SRC_DIR}/config/linux.config" .config
     ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- make oldconfig
-    ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- make vmlinux -j${CPU_NUM}
+    ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- make -j${CPU_NUM}
 }
 
 
