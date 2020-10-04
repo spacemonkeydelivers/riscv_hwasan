@@ -28,5 +28,5 @@ if [[ "$1" == "all" ]]; then
 fi
 
 build_compilerrt
-#build_asan_tests
+build_asan_tests
 
