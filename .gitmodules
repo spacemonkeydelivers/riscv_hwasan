@@ -5,11 +5,11 @@
 [submodule "src/qemu"]
 	path = src/qemu
 	url = https://github.com/gattaca-lab/qemu
-	branch = riscv_pm_qemu_5.1
+	branch = riscv_pm_qemu_5.1_dev
 [submodule "src/linux"]
 	path = src/linux
 	url = https://github.com/gattaca-lab/linux
-	branch = riscv_pm_5.8
+	branch = riscv_pm_5.8_dev
 [submodule "src/buildroot"]
 	path = src/buildroot
 	url = git://git.busybox.net/buildroot
