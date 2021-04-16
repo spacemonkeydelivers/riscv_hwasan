@@ -18,7 +18,7 @@ function build_llvm_native ()
     export NM=riscv64-unknown-linux-gnu-nm
     export NM_FOR_BUILD=riscv64-unknown-linux-gnu-nm
     export LD_LIBRARY_PATH="${BUILDROOT_BUILD_DIR}/output/build/libzlib-1.2.11/":"${INSTALL_DIR}/sysroot/lib/usr/lib":"${INSTALL_DIR}/sysroot/lib/":${LD_LIBRARY_PATH}
-    export QEMU_LD_PREFIX=${INSTALL_NATIVE_DIR}/sysroot"
+    export QEMU_LD_PREFIX="${INSTALL_NATIVE_DIR}/sysroot"
     cmake \
         -DCMAKE_BUILD_TYPE="Debug" \
         -DLLVM_ENABLE_PROJECTS="clang;compiler-rt;lld" \
