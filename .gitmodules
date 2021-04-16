@@ -1,3 +1,10 @@
+[submodule "src/riscv-gnu-toolchain"]
+	path = src/riscv-gnu-toolchain
+	url = https://github.com/riscv/riscv-gnu-toolchain
+	branch = master
+[submodule "src/buildroot"]
+	path = src/buildroot
+	url = git://git.busybox.net/buildroot
 [submodule "src/llvm-project"]
 	path = src/llvm-project
 	url = https://github.com/gattaca-lab/llvm-project
@@ -10,12 +17,10 @@
 	path = src/linux
 	url = https://github.com/gattaca-lab/linux
 	branch = riscv_pm_5.8_dev
-[submodule "src/buildroot"]
-	path = src/buildroot
-	url = git://git.busybox.net/buildroot
 [submodule "src/riscv-pk"]
 	path = src/riscv-pk
 	url = https://github.com/riscv/riscv-pk
-[submodule "src/riscv-gnu-toolchain"]
-	path = src/riscv-gnu-toolchain
-	url = https://github.com/riscv/riscv-gnu-toolchain
+[submodule "src/gcc_native"]
+	path = src/gcc_native
+	url = https://github.com/gcc-mirror/gcc
+	branch = releases/gcc-10
