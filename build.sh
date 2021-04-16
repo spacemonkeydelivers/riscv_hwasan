@@ -7,7 +7,6 @@ source scripts/env.sh
 source scripts/build_qemu.sh
 source scripts/build_gcc.sh
 source scripts/build_linux.sh
-source scripts/build_pk.sh
 source scripts/build_buildroot.sh
 source scripts/build_llvm.sh
 source scripts/build_compilerrt.sh

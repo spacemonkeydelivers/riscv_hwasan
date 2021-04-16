@@ -8,9 +8,19 @@ git submodule update --init --recursive
 
 # switch QEMU to proper branch
 cd ${QEMU_SRC_DIR}
-git checkout riscv_pm_qemu_5.1_dev
+git checkout submit_pm_to_qemu
 git submodule init
 git submodule update
+cd ${ROOT_DIR}
+
+# switch GCC toolchain to proper branch
+cd ${GCC_SRC_DIR}
+git checkout master
+cd ${ROOT_DIR}
+
+# switch GCC toolchain to proper branch
+cd ${GCC_NATIVE_SRC_DIR}
+git checkout releases/gcc-10
 cd ${ROOT_DIR}
 
 # switch Linux to proper branch
