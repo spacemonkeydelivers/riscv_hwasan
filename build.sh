@@ -16,6 +16,7 @@ source scripts/build_gcc_native.sh
 source scripts/build_glibc_native.sh
 source scripts/build_binutils_native.sh
 source scripts/build_libatomic_native.sh
+source scripts/build_llvm_native.sh
 
 mkdir -p "${BUILD_DIR}"
 mkdir -p "${INSTALL_DIR}"
