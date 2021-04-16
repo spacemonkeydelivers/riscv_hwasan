@@ -30,7 +30,7 @@ cd ${ROOT_DIR}
 
 # switch LLVM to proper branch
 cd ${LLVM_SRC_DIR}
-git checkout riscv_hwasan
+git checkout hwasan_upstream_llvm13
 cd ${ROOT_DIR}
 
 # switch LLVM to proper branch

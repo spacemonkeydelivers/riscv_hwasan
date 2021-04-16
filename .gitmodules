@@ -8,7 +8,7 @@
 [submodule "src/llvm-project"]
 	path = src/llvm-project
 	url = https://github.com/gattaca-lab/llvm-project
-	branch = riscv_hwasan
+	branch = hwasan_upstream_llvm13
 [submodule "src/qemu"]
 	path = src/qemu
 	url = https://github.com/gattaca-lab/qemu
