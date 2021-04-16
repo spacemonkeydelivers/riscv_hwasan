@@ -13,20 +13,33 @@ source scripts/build_llvm.sh
 source scripts/build_compilerrt.sh
 source scripts/build_asantests.sh
 
+source scripts/build_gcc_native.sh
+source scripts/build_glibc_native.sh
+source scripts/build_binutils_native.sh
+source scripts/build_libatomic_native.sh
+
 mkdir -p "${BUILD_DIR}"
 mkdir -p "${INSTALL_DIR}"
 
 set -e
 
-if [[ "$1" == "all" ]]; then
+if [[ "$1" == "target" ]]; then
+if [[ "$2" == "all" ]]; then
   build_qemu
   build_gcc
   build_linux
-  build_pk
   build_buildroot
   build_llvm
 fi
+  build_compilerrt
+  build_asan_tests
+fi
 
-build_compilerrt
-build_asan_tests
-
+if [[ "$1" == "native" ]]; then
+  mkdir -p "${INSTALL_NATIVE_DIR}"
+  build_glibc_native
+  build_gcc_native
+  build_binutils_native
+  build_libatomic_native
+  build_llvm_native
+fi
