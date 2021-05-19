@@ -8,7 +8,7 @@ git submodule update --init --recursive
 
 # switch QEMU to proper branch
 cd ${QEMU_SRC_DIR}
-git checkout submit_pm_to_qemu
+git checkout upstream_pm_qemu_v600_1705
 git submodule init
 git submodule update
 cd ${ROOT_DIR}

@@ -12,7 +12,7 @@
 [submodule "src/qemu"]
 	path = src/qemu
 	url = https://github.com/gattaca-lab/qemu
-	branch = riscv_pm_qemu_5.1_dev
+	branch = upstream_pm_qemu_v600_1705
 [submodule "src/linux"]
 	path = src/linux
 	url = https://github.com/gattaca-lab/linux
