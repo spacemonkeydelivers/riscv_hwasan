@@ -17,8 +17,8 @@ function build_asan_tests ()
       CC="${INSTALL_DIR}/bin/clang" \
       CXX="${INSTALL_DIR}/bin/clang++" \
     cmake \
-    -DCMAKE_C_FLAGS="  -target ${RISCV_GCC_TARGET} -B ${INSTALL_DIR}/lib/gcc/${RISCV_GCC_TARGET}/9.2.0 -O0 -g" \
-    -DCMAKE_CXX_FLAGS="-target ${RISCV_GCC_TARGET} -B ${INSTALL_DIR}/lib/gcc/${RISCV_GCC_TARGET}/9.2.0 -O0 -g" \
+    -DCMAKE_C_FLAGS="  -target ${RISCV_GCC_TARGET} -B ${INSTALL_DIR}/lib/gcc/${RISCV_GCC_TARGET}/${GCC_VERSION} -O0 -g" \
+    -DCMAKE_CXX_FLAGS="-target ${RISCV_GCC_TARGET} -B ${INSTALL_DIR}/lib/gcc/${RISCV_GCC_TARGET}/${GCC_VERSION} -O0 -g" \
     -DCOMPILER_RT_DEBUG=ON \
     -DCOMPILER_RT_INCLUDE_TESTS=ON \
     -DLLVM_CONFIG_PATH="${INSTALL_DIR}/bin/llvm-config" \

@@ -4,7 +4,7 @@ SRC_DIR="${ROOT_DIR}/src"
 BUILD_DIR="${ROOT_DIR}/build"
 INSTALL_DIR="${ROOT_DIR}/install"
 INSTALL_NATIVE_DIR="${ROOT_DIR}/install_native"
-LLVM_VERSION="13.0.0"
+LLVM_VERSION="15.0.0"
 RISCV_GCC_TARGET=riscv64-unknown-linux-gnu
 RISCV_ISA_TARGET=rv64gc
 
@@ -19,6 +19,7 @@ LINUX_SRC_DIR="${SRC_DIR}/linux"
 LLVM_SRC_DIR="${SRC_DIR}/llvm-project"
 COMPILERRT_SRC_DIR="${SRC_DIR}/llvm-project/compiler-rt"
 PK_SRC_DIR="${SRC_DIR}/riscv-pk"
+GCC_VERSION="11.1.0"
 
 QEMU_BUILD_DIR="${BUILD_DIR}/qemu"
 GCC_BUILD_DIR="${BUILD_DIR}/riscv-gnu-toolchain"

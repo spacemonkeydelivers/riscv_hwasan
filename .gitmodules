@@ -8,19 +8,16 @@
 [submodule "src/llvm-project"]
 	path = src/llvm-project
 	url = https://github.com/gattaca-lab/llvm-project
-	branch = hwasan_upstream_llvm13
+	branch = hwasan_upstream_llvm15_050722
 [submodule "src/qemu"]
 	path = src/qemu
 	url = https://github.com/gattaca-lab/qemu
-	branch = upstream_pm_qemu_v600_1705
+	branch = master
 [submodule "src/linux"]
 	path = src/linux
 	url = https://github.com/gattaca-lab/linux
 	branch = riscv_pm_5.8_dev
-[submodule "src/riscv-pk"]
-	path = src/riscv-pk
-	url = https://github.com/riscv/riscv-pk
 [submodule "src/gcc_native"]
 	path = src/gcc_native
 	url = https://github.com/gcc-mirror/gcc
-	branch = releases/gcc-10
+	branch = releases/gcc-11

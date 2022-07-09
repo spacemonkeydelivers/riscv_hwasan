@@ -8,7 +8,7 @@ git submodule update --init --recursive
 
 # switch QEMU to proper branch
 cd ${QEMU_SRC_DIR}
-git checkout upstream_pm_qemu_v600_1705
+git checkout master
 git submodule init
 git submodule update
 cd ${ROOT_DIR}
@@ -20,7 +20,7 @@ cd ${ROOT_DIR}
 
 # switch GCC toolchain to proper branch
 cd ${GCC_NATIVE_SRC_DIR}
-git checkout releases/gcc-10
+git checkout releases/gcc-11
 cd ${ROOT_DIR}
 
 # switch Linux to proper branch
@@ -30,10 +30,10 @@ cd ${ROOT_DIR}
 
 # switch LLVM to proper branch
 cd ${LLVM_SRC_DIR}
-git checkout hwasan_upstream_llvm13
+git checkout hwasan_upstream_llvm15_050722
 cd ${ROOT_DIR}
 
 # switch LLVM to proper branch
 cd ${BUILDROOT_SRC_DIR}
-git checkout 0e09875f0947c32aca19a351123bde0bd9026aff
+git checkout 5f966716569ad0b133ae40662d3f5817e09fa313
 cd ${ROOT_DIR}
