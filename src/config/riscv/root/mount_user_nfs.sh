@@ -15,8 +15,8 @@ USER_NAME=$1
 USER_PATH=$2
 
 export RISCV_SNT_ROOT=/tank/work/dev/share/nfs/${USER_NAME}/${USER_PATH}/
-export PATH="$PATH:$RISCV_SNT_ROOT/riscv_sanitizers/install_native/sysroot/bin"
+export PATH="$PATH:$RISCV_SNT_ROOT/install_native/sysroot/bin"
 mkdir -p "$RISCV_SNT_ROOT"
 mount.nfs neptune:$RISCV_SNT_ROOT $RISCV_SNT_ROOT
-cp $RISCV_SNT_ROOT/riscv_sanitizers/install_native/sysroot/bin/ldd /usr/bin
+cp $RISCV_SNT_ROOT/install_native/sysroot/bin/ldd /usr/bin
 ln -s /bin/bash /usr/bin/bash
