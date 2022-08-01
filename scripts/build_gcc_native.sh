@@ -23,7 +23,7 @@ function build_gcc_native ()
                                               --enable-shared --enable-threads --disable-libmudflap --disable-libssp \
                                               --disable-libgomp --disable-libstdcxx-pch --with-gnu-as --with-gnu-ld \
                                               --enable-languages=c,c++ --enable-symvers=gnu --enable-__cxa_atexit \
-                                              --disable-nls --disable-multilib
+                                              --disable-nls --disable-multilib --enable-libatomic --enable-zlib
     set -e
     make  -j${CPU_NUM}
     make install
