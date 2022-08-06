@@ -21,6 +21,6 @@ function build_compilerrt ()
     PATH="${INSTALL_DIR}/bin/:$PATH" \
         CC="${INSTALL_DIR}/bin/clang" CXX="${INSTALL_DIR}/bin/clang++" \
     make -j${CPU_NUM}
-    make install
+    make install -j${CPU_NUM}
 }
 

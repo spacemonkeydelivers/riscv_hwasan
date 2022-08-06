@@ -21,7 +21,7 @@ function build_llvm ()
         "${LLVM_SRC_DIR}/llvm"
     set -e
     make -j${CPU_NUM}
-    make install
+    make install -j${CPU_NUM}
 }
 
 
