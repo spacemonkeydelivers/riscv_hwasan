@@ -7,17 +7,17 @@
 	url = git://git.busybox.net/buildroot
 [submodule "src/llvm-project"]
 	path = src/llvm-project
-	url = https://github.com/gattaca-lab/llvm-project
-	branch = hwasan_upstream_llvm15_050722
+	url = https://github.com/spacemonkeydelivers/llvm-project
+	branch = main
 [submodule "src/qemu"]
 	path = src/qemu
-	url = https://github.com/gattaca-lab/qemu
+	url = https://github.com/spacemonkeydelivers/qemu
 	branch = master
 [submodule "src/linux"]
 	path = src/linux
-	url = https://github.com/gattaca-lab/linux
+	url = https://github.com/spacemonkeydelivers/linux
 	branch = riscv_pm_5.8_dev
 [submodule "src/gcc_native"]
 	path = src/gcc_native
 	url = https://github.com/gcc-mirror/gcc
-	branch = releases/gcc-11
+	branch = releases/gcc-13

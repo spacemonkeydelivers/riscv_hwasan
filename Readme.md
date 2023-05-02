@@ -10,7 +10,7 @@ process and to provide releases.
 ## How to obtain sources
 
 ```
- git clone https://github.com/gattaca-lab/riscv_hwasan
+ git clone https://github.com/spacemonkeydelivers/riscv_hwasan
  cd riscv_hwasan
  # WILL TAKE A WHILE
  ./setup_git
@@ -29,7 +29,7 @@ sudo apt-get install autoconf automake autotools-dev curl python3 libmpc-dev lib
 To build project:
 
 ```
-./build.sh all
+./build.sh target all
 ```
 
 ## How to compile with clang
