@@ -15,7 +15,7 @@ QEMU_BIN=${INSTALL_DIR}/bin/qemu-system-riscv64
 
 sudo -E ${QEMU_BIN} \
     -nographic \
-    -machine virt -cpu rv64,x-j=on \
+    -machine virt -cpu rv64,ssnjpm=on \
     -kernel ${LINUX_BUILD_DIR}/arch/riscv/boot/Image \
     -append "root=/dev/vda ro console=ttyS0" \
     -drive file=${BUILDROOT_BUILD_DIR}/output/images/rootfs.ext2,format=raw,id=hd0 \

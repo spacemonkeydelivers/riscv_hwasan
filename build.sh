@@ -40,6 +40,6 @@ if [[ "$1" == "native" ]]; then
   build_glibc_native
   build_gcc_native
   build_binutils_native
-#  build_libatomic_native
+  build_libatomic_native
   build_llvm_native
 fi
