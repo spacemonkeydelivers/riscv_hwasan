@@ -8,7 +8,7 @@ git submodule update --init --recursive
 
 # switch QEMU to proper branch
 cd ${QEMU_SRC_DIR}
-git checkout zjpm_0.6.1
+git checkout zjpm_08_new
 git submodule init
 git submodule update
 cd ${ROOT_DIR}
@@ -25,7 +25,7 @@ cd ${ROOT_DIR}
 
 # switch Linux to proper branch
 cd ${LINUX_SRC_DIR}
-git checkout zjpm_0.5.4
+git checkout zjpm_0.8
 cd ${ROOT_DIR}
 
 # switch LLVM to proper branch
