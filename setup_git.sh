@@ -15,7 +15,7 @@ cd ${ROOT_DIR}
 
 # switch GCC toolchain to proper branch
 cd ${GCC_SRC_DIR}
-git checkout master
+git checkout 2023.05.24
 cd ${ROOT_DIR}
 
 # switch GCC toolchain to proper branch
